@@ -8,7 +8,7 @@ const port = process.env.PORT || 3001;
 
 app.use(express.static(__dirname + '/dist/angular-tour-of-heroes'));
 
-app.get('/*', (req,res) => res.sendFile(path.join(__dirname, '/dist/angular-tour-of-heroes/index.html')));
+app.get('/*', (req,res) => res.sendFile(path.join(__dirname)));
 
 const server = http.createServer(app);
 
